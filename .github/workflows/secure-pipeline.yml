@@ -50,5 +50,6 @@ jobs:
       # 8. Push Image
       - name: Push Image
         run: |
-          docker tag secure-app akshiv/secure-app
-          docker push akshiv/secure-app
+        - name: Push Image
+          docker tag secure-app demofour/secure-app
+          docker push demofour/secure-app
